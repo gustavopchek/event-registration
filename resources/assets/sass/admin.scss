@@ -1,0 +1,158 @@
+/* Admin panel */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.alert{
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.alert.alert-info{
+	background-color: #03a9f4;
+    color: rgba(255,255,255, 0.84);
+}
+
+.alert.alert-success{
+	background-color: #4caf50;
+    color: rgba(255,255,255, 0.84);
+}
+
+.alert.alert-danger{
+	background-color: #f44336;
+    color: rgba(255,255,255, 0.84);
+}
+
+.alert-warning{
+	background-color: #ff5722;
+	color: rgba(255,255,255, 0.84);
+}
+
+ul.pagination{
+	text-align: center;
+	li.active{
+		span{
+			color: #fff;
+		}
+	}
+}
+
+
+header{
+	.nav-wrapper{
+		padding-left: 20px;
+		margin-left: 300px;
+	}
+	.side-nav{
+		li.title{
+			border-bottom: 1px solid #333;
+			a{
+				height: auto;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				img{
+					max-width: 100%;
+				}
+			}
+
+		}
+		li.active{
+			background-color: #333;
+			a{
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+main {
+	flex: 1 0 auto;
+	margin-top: 2rem !important;
+
+	.show{
+		form{
+			display: inline-block;
+		}
+	}
+
+	a.card{
+		height: 125px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+		color: #000;
+		.card-content{
+			text-align: center;
+			font-size: 20px;
+			.card-title{
+				margin-bottom: 12px;
+				i.material-icons{
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	.card-panel{
+		h2.card-title{
+			font-size: 2rem;
+		}
+		table{
+			td.actions{
+				a, form{
+					float: left;
+					margin: 5px;
+				}
+			}
+		}
+		.card-action{
+			border-top: 1px solid rgba(160, 160, 160, 0.2);
+			padding-top: 8px;
+		}
+	}
+
+	.actions{
+		a, form{
+			float: left;
+			margin: 5px;
+		}
+	}
+
+	fieldset{
+		legend{
+			padding-left: 3px;
+			padding-right: 3px;
+	    	font-weight: bold;
+		}
+	}
+
+	.installments{
+		display: none;
+	}
+}
+
+footer{
+	padding-top: 0 !important;
+	text-transform: uppercase;
+	font-size: 12px;
+	a{
+		color: rgba(255, 255, 255, 0.8);
+	}
+	.page-footer{
+		background-color: #ff7d1a;
+	}
+}
+
+
+@media only screen and (min-width: 993px){
+	body:not(#login){
+		.container {
+		    margin-left: calc(15% + 120px);
+		}
+	}
+}
+
