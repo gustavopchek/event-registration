@@ -10,7 +10,7 @@
         "buzz/laravel-google-captcha": "^2.1",
         "cviebrock/eloquent-sluggable": "^4.3",
         "doctrine/dbal": "^2.5",
-        "dompdf/dompdf": "^0.8.1",
+        "dompdf/dompdf": "^1.2.1",
         "fideloper/proxy": "~3.3",
         "guzzlehttp/guzzle": "^6.3",
         "hesto/multi-auth": "^2.0",
